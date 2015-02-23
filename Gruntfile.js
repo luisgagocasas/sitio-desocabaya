@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                     linenos: false
                 },
                 files: [{
-                    'public/css/estilos.css': 'stylus/estilos.styl',
+                    'css/estilos.css': 'stylus/estilos.styl',
                 }]
             }
         },
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 			},
 			js: {
 				files: {
-					'public/js/main.min.js': 'javascript/*.js',
+					'js/main.min.js': 'javascript/*.js',
 				}
 			}
 	    },
@@ -34,8 +34,8 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-					'public/index.html': 'jade/index.jade',
-					'public/404.html': 'jade/404.jade',
+					'index.php': 'jade/index.jade',
+					'404.php': 'jade/404.jade',
 				}
             }
         },
