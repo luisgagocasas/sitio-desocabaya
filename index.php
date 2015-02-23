@@ -5,8 +5,7 @@
     <title>Desocabaya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" href="favicon.ico"/>
-    <script src="http://192.168.1.100:35729/livereload.js?snipver=1"></script>
-    <!--link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Lato")-->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
     <link rel="stylesheet" href="css/estilos.css"/>
   </head>
   <body>

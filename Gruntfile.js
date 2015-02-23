@@ -34,8 +34,8 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-					'index.html': 'jade/index.jade',
-					'404.html': 'jade/404.jade',
+					'index.php': 'jade/index.jade',
+					'404.php': 'jade/404.jade',
 				}
             }
         },
