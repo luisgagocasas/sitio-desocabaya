@@ -1,0 +1,191 @@
+@css {
+/*  Luis Gago Casas @luisgagocasas https://luisgagocasas.com */
+}
+@import 'nib/vendor'
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	ms-border-radius arguments
+	o-border-radius arguments
+	border-radius arguments
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	ms-appearance arguments
+	o-appearance arguments
+	appearance arguments
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	ms-box-shadow arguments
+	o-box-shadow arguments
+	box-shadow arguments
+transform()
+	-webkit-transform arguments
+	-moz-transform arguments
+	ms-transform arguments
+	o-transform arguments
+	transform arguments
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	ms-transition arguments
+	o-transition arguments
+	transition arguments
+zoom()
+	-ms-zoom arguments
+	-webkit-zoom arguments
+	zoom arguments
+background-size()
+	-webkit-background-size arguments
+	-moz-background-size arguments
+	ms-background-size arguments
+	o-background-size arguments
+	background-size arguments
+body,html
+	height 100%
+	margin 0
+	padding 0
+body
+	//background-color #1ABEE5//#E5C41A//#6A18D0//#1860D0
+	font-family 'Lato', sans-serif !important
+	background radial-gradient(#2F5F7C, #0E2F44, #000000)
+
+//fonts
+@font-face
+	font-family: 'icomoon'
+	src:url('../fonts/icomoon.eot?19msz4')
+	src:url('../fonts/icomoon.eot?#iefix19msz4') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?19msz4') format('woff'),
+		url('../fonts/icomoon.ttf?19msz4') format('truetype'),
+		url('../fonts/icomoon.svg?19msz4#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+[class^="icon-"], [class*=" icon-"]
+	font-family: 'icomoon'
+	speak: none
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+.icon-mail:before
+	content: "\ea83"
+.icon-facebook2:before
+	content: "\ea8d"
+.icon-twitter2:before
+	content: "\ea92"
+//fons end
+//Vista login, error centrada
+.contenido-min
+	height: 290px
+.contenido
+	height: 480px
+.contenido-min,.contenido
+	bottom: 50%
+	left: 0
+	margin: auto
+	position: absolute
+	right: 0
+	top: 50%
+	width: auto
+	text-align center
+	color #FFF
+
+//Error
+.error_404_h1
+	font-size 50px
+	font-weight normal
+	color #FFF
+	margin: 60px 0px 0px 0px
+.error_404_h2
+	font-size 17px
+	margin: 0
+// Cuenta regresiva
+.countdown
+	font-size 20px
+	margin 0px 0px 30px 0px
+	& > p
+		padding-top:3px
+	& .counter
+		left -20px
+		margin 5px 0 0
+		padding 5px 0 3px 20px
+		position relative
+		width 100%
+		font-size 20px
+	& .counter > div
+		display inline-block
+	& .counter > div span:nth-of-type(2)
+		font-size 15px
+//girando
+.logo,.mapa
+	margin 0 auto
+.mapa
+	width 200px
+	height 200px
+	border-radius 20%
+	box-shadow -10px -10px 0 0 rgba(0,0,0,0.15) inset,
+				-20px -20px 0 0 rgba(0,0,0,0.1) inset
+	background url(../img/Desocabaya-fotos.png)
+	background-size cover
+	animation tierra-girando 10s infinite linear
+
+//estrellas
+.estrella
+	width 2px
+	height 2px
+	background #FFF
+	position absolute
+	border-radius 50%
+	&:nth-child(2n)
+		animation estrella-par 2s infinite
+	&:nth-child(2n+1)
+		animation estrella-impar 2s infinite
+.primera
+	top 20%
+	left 20%
+.segunda
+	top 60%
+	left 80%
+.tercera
+	top 70%
+	left 20%
+.cuarta
+	top 90%
+	left 90%
+.quinta
+	top 20%
+	left 90%
+.sexta
+	top 90%
+	left 30%
+//menaje
+.publicando
+	margin 30px 0px 0px 0px
+	color aquamarine
+//redes
+.btn-enlace
+	text-decoration none
+	color #FFF
+.btn-redes
+	font-size: 30px
+	margin: 5px
+//keyframe
+@keyframes tierra-girando
+	from
+		background-position left center
+	to
+		background-position right center
+@keyframes estrella-par
+	0% , 90%
+		box-shadow 0 0 3px 3px rgba(255,255,255,.3)
+	100%
+		box-shadow 0 0 16px 16px rgba(255,255,255,.3)
+@keyframes estrella-impar
+	0%, 35%, 50%
+		box-shadow 0 0 3px 3px rgba(255,255,255,.3)
+	45%
+		box-shadow 0 0 16px 16px rgba(255,255,255,.3)
