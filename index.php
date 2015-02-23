@@ -26,12 +26,6 @@
           <div><span class="segundos"></span><span>Segundos</span></div>
         </div>
       </div><a href="https://facebook.com/Desocabaya" target="_blank" class="btn-enlace"><span class="icon-facebook2 btn-redes"></span></a>
-      <!--a(href="", class="btn-enlace")
-      span.icon-mail.btn-redes
-      
-      -->
-      <!--a(href="", class="btn-enlace")span.icon-twitter2.btn-redes
-      -->
     </div>
     <script src="js/main.min.js"></script>
   </body>
