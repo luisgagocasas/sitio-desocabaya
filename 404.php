@@ -7,7 +7,14 @@
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
     <link rel="stylesheet" href="css/estilos.css"/>
-    <meta name="description" content="Todo comiensa con una necesidad el buscar los lugares y sitios en Socabaya"/>
+    <meta name="description" content="Todo comienza con una necesidad el buscar los lugares y sitios en Socabaya | Desocabaya.com"/>
+    <meta property="og:title" content="Desocabaya"/>
+    <meta property="og:description" content="Todo comienza con una necesidad el buscar los lugares y sitios en Socabaya | Desocabaya.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Desocabaya.com"/>
+    <meta property="og:url" content="https://desocabaya.com/"/>
+    <meta property="og:image" content="https://desocabaya.com/img/desocabaya-facebook.png"/>
+    <meta property="og:fb_admins" content="100000476487163"/>
   </head>
   <body>
     <div class="contenido-min"><img src="img/Desocabaya.png" class="logo"/>
