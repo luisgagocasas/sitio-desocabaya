@@ -26,7 +26,7 @@
           <div><span class="minutos"></span><span>Minutos</span></div>
           <div><span class="segundos"></span><span>Segundos</span></div>
         </div>
-      </div><a href="https://facebook.com/Desocabaya" target="_blank" class="btn-enlace"><span class="icon-facebook2 btn-redes"></span></a><a href="https://twitter.com/DeSocabaya" target="_blank" class="btn-enlace"><span class="ico-twitter2 btn-redes"></span></a>
+      </div><a href="https://facebook.com/Desocabaya" target="_blank" class="btn-enlace"><span class="icon-facebook2 btn-redes"></span></a><a href="https://twitter.com/DeSocabaya" target="_blank" class="btn-enlace"><span class="icon-twitter2 btn-redes"></span></a>
     </div>
     <script src="js/main.min.js"></script>
   </body>
