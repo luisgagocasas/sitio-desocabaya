@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8"/>
-    <title>Desocabaya.com</title>
+    <title>Desocabaya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
