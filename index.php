@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
     <link rel="stylesheet" href="css/estilos.css"/>
+    <meta name="description" content="Todo comiensa con una necesidad el buscar los lugares y sitios en Socabaya."/>
   </head>
   <body>
     <div class="contenido"><img src="img/Desocabaya.png" class="logo"/>
