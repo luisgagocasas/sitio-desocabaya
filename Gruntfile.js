@@ -38,6 +38,30 @@ module.exports = function (grunt) {
 					'404.php': 'jade/404.jade',
 				}
             }
+        }
+        //Notificaciones
+        notify: {
+            uglify: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "uglify iniciado!"
+                }
+            },
+            jade: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "jade iniciado!"
+                }
+            },
+            stylus: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "stylus iniciado!"
+                }
+            }
         },
         //Observar cambios
 		watch: {
@@ -63,11 +87,8 @@ module.exports = function (grunt) {
 		},
 	});
 
-	//Cargo las tareas
-	grunt.loadNpmTasks('grunt-contrib-stylus');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-jade');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	// Run Default task(s).
-	grunt.registerTask('default', ['stylus','uglify','jade','watch']);
+	//Cargamos todos los tasks declarados en package.json
+	require('load-grunt-tasks')(grunt);
+	// Defino las tareas.
+	grunt.registerTask('default', ['stylus','uglify','jade', 'notify','watch']);
 };
