@@ -19,3 +19,11 @@ html(lang="es")
 	body
 		block contenido
 		script(src="js/main.min.js")
+		form(method="post", id="frmcheck")
+			#cerrar x
+			p Suscribete y enterate todo sobre Desocabaya tiene para ti.
+			input(type="text", name="nombre", id="nombre", required, placeholder="Nombre", class="input")
+			#apellidos(style="display: inline-block")
+				input(type="text", name="apellido", required, placeholder="Apellidos", class="input")
+			input(type="email", name="correo", required, placeholder="Correo", class="input")
+			button(class="btn yellow", type="submit") Suscribirme

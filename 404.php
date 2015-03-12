@@ -22,5 +22,15 @@
       <h2 class="error_404_h2">LO QUE BUSCAS NO ESTA AQUÍ</h2>
     </div>
     <script src="js/main.min.js"></script>
+    <form method="post" id="frmcheck">
+      <div id="cerrar">x</div>
+      <p>Suscribete y enterate todo sobre Desocabaya tiene para ti.</p>
+      <input type="text" name="nombre" id="nombre" required="required" placeholder="Nombre" class="input"/>
+      <div id="apellidos" style="display: inline-block">
+        <input type="text" name="apellido" required="required" placeholder="Apellidos" class="input"/>
+      </div>
+      <input type="email" name="correo" required="required" placeholder="Correo" class="input"/>
+      <button type="submit" class="btn yellow">Suscribirme</button>
+    </form>
   </body>
 </html>

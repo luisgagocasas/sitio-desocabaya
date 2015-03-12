@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 					'404.php': 'jade/404.jade',
 				}
             }
-        }
+        },
         //Notificaciones
         notify: {
             uglify: {
