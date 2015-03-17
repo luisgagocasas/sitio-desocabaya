@@ -16,7 +16,7 @@ if ($api->errorCode){
 	$respuesta->mensaje = "\tCode=".$api->errorCode."\n";
 	$respuesta->mensaje .= "\tMsg=".$api->errorMessage."\n";
 } else {
-    $respuesta->mensaje = "<div class=\"mensaje\">Revise su correo para confirmar tu suscripción.</div>";
+    $respuesta->mensaje = "<div class=\"mensaje\">Revise su correo para confirmar la suscripción.</div>";
 }
 echo json_encode($respuesta);
 ?>
