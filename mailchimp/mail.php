@@ -1,7 +1,7 @@
 <?php
 include_once('MCAPI.class.php');
 $respuesta = new stdClass();
-$apikey="us10-7a24cd2ff378616491c4b303f-7de6a6aac2";
+$apikey="4ba683b181c950e368e81d4390cb9a12-us10";
 $mailchimp = new MCAPI($apikey,true);
 $email=$_POST['correo'];
 $nombre=$_POST['nombre'];
