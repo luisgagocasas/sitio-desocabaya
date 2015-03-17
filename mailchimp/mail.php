@@ -1,22 +1,22 @@
 <?php
 include_once('MCAPI.class.php');
 $respuesta = new stdClass();
-$apikey="4ba683b181c950e368e81d4390cb9a12-us10";
-$mailchimp = new MCAPI($apikey,true);
-$email=$_POST['correo'];
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
-$listId="7de6a6aac2";
+$my_email = $_POST['correo'];
+//Conexión
+$apikey = '4ba683b181c950e368e81d4390cb9a12-us10';
+$listId = '7de6a6aac2';
+$apiUrl = 'http://api.mailchimp.com/1.3/';
+//
+$api = new MCAPI($apikey);
 $merge_vars = array('FNAME'=>$nombre, 'LNAME'=>$apellido);
-
-$resultado=$mailchimp->listSubscribe($listId,$email,$merge_vars);
-//Controlamos los errores
-if (!$mailchimp->errorCode){
-    $respuesta->mensaje ="\tCode=".$mailchimp->errorCode."\n";
-    $respuesta->mensaje .="\tMsg=".$mailchimp->errorMessage."\n";
-}
-else {
-   $respuesta->mensaje = "<div class=\"mensaje\">Revise su correo para confirmar tu suscripción.</div>";
+$retval = $api->listSubscribe($listId,$my_email,$merge_vars);
+if ($api->errorCode){
+	$respuesta->mensaje = "\tCode=".$api->errorCode."\n";
+	$respuesta->mensaje .= "\tMsg=".$api->errorMessage."\n";
+} else {
+    $respuesta->mensaje = "<div class=\"mensaje\">Revise su correo para confirmar tu suscripción.</div>";
 }
 echo json_encode($respuesta);
 ?>
