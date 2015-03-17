@@ -7,7 +7,7 @@ $(document).ready( function(){
             url: "mailchimp/mail.php",
             data: formulario
         }).done(function(respuesta){
-            $("#mensaje").html(respuesta.mensaje).fadeIn();
+            $("#formulario").html(respuesta.mensaje).fadeIn();
         });
         return false;
     });

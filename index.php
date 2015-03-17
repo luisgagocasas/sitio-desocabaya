@@ -35,16 +35,18 @@
         </div>
       </div><a href="https://facebook.com/Desocabaya" target="_blank" class="btn-enlace"><span class="icon-facebook2 btn-redes"></span></a><a href="" id="suscribirse" class="btn-enlace"><span class="icon-mail btn-redes"></span></a><a href="https://twitter.com/DeSocabaya" target="_blank" class="btn-enlace"><span class="icon-twitter2 btn-redes"></span></a>
     </div>
-    <script src="js/main.min.js"></script>
     <form method="post" id="frmcheck">
       <div id="cerrar">x</div>
-      <p>Suscribete y enterate todo sobre Desocabaya tiene para ti.</p>
-      <input type="text" name="nombre" id="nombre" required="required" placeholder="Nombre" class="input"/>
-      <div id="apellidos" style="display: inline-block">
-        <input type="text" name="apellido" required="required" placeholder="Apellidos" class="input"/>
+      <div id="formulario">
+        <p>Suscribete y enterate todo sobre Desocabaya tiene para ti.</p>
+        <input type="text" name="nombre" id="nombre" required="required" placeholder="Nombre" class="input"/>
+        <div id="apellidos" style="display: inline-block">
+          <input type="text" name="apellido" required="required" placeholder="Apellidos" class="input"/>
+        </div>
+        <input type="email" name="correo" required="required" placeholder="Correo" class="input"/>
+        <button type="submit" class="btn yellow">Suscribirme</button>
       </div>
-      <input type="email" name="correo" required="required" placeholder="Correo" class="input"/>
-      <button type="submit" class="btn yellow">Suscribirme</button>
     </form>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
