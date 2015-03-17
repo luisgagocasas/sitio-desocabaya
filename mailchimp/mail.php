@@ -7,7 +7,7 @@ $email=$_POST['correo'];
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $listId="7de6a6aac2";
-$merge_vars = array('NOMBRES'=>$nombre, 'APELLIDOS'=>$apellido);
+$merge_vars = array('FNAME'=>$nombre, 'LNAME'=>$apellido);
 
 $resultado=$mailchimp->listSubscribe($listId,$email,$merge_vars);
 //Controlamos los errores
